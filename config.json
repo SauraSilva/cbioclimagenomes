@@ -40,7 +40,23 @@
   },
   "connections": [],
   "defaultSession": {
-    "name": "Nova Sessão CBioClima"
+    "name": "Sessão CBioClima",
+    "view": {
+      "id": "linear_view",
+      "type": "LinearGenomeView",
+      "tracks": [
+        {
+          "type": "FeatureTrack",
+          "configuration": "Ufoliosa_CP.sorted.gff3",
+          "displays": [
+            {
+              "type": "LinearBasicDisplay",
+              "configuration": "Ufoliosa_CP.sorted.gff3-LinearBasicDisplay"
+            }
+          ]
+        }
+      ]
+    }
   },
   "tracks": [
     {
