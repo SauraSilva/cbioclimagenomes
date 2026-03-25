@@ -22,24 +22,18 @@
   "configuration": {
     "theme": {
       "palette": {
-        "primary": {
-          "main": "#FF6600"
-        },
-        "secondary": {
-          "main": "#333333"
-        },
-        "tertiary": {
-          "main": "#005931"
-        },
-        "background": {
-          "default": "#ffffff"
-        }
+        "primary": { "main": "#FF6600" },
+        "secondary": { "main": "#333333" },
+        "tertiary": { "main": "#005931" },
+        "background": { "default": "#ffffff" }
       },
       "overrides": {
         "JBrowseAppBar": {
           "mainBar": {
             "background": "#f8f9fa",
-            "color": "#333333"
+            "color": "#333333",
+            "display": "flex",
+            "justifyContent": "center" 
           },
           "logo": {
             "height": "45px",
@@ -47,7 +41,10 @@
             "maxWidth": "180px",
             "objectFit": "contain",
             "padding": "5px",
-            "filter": "contrast(1.2) brightness(0.9)" 
+            "filter": "contrast(1.2) brightness(0.8)",
+            "position": "absolute",
+            "left": "50%",
+            "transform": "translateX(-50%)"
           }
         }
       }
@@ -96,9 +93,7 @@
           "indexType": "TBI"
         }
       },
-      "assemblyNames": [
-        "Ufoliosa_CP"
-      ],
+      "assemblyNames": [ "Ufoliosa_CP" ],
       "displays": [
         {
           "type": "LinearBasicDisplay",
@@ -115,21 +110,10 @@
     {
       "type": "TrixTextSearchAdapter",
       "textSearchAdapterId": "Ufoliosa_CP-index",
-      "ixFilePath": {
-        "uri": "trix/Ufoliosa_CP.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/Ufoliosa_CP.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/Ufoliosa_CP_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": [
-        "Ufoliosa_CP"
-      ]
+      "ixFilePath": { "uri": "trix/Ufoliosa_CP.ix", "locationType": "UriLocation" },
+      "ixxFilePath": { "uri": "trix/Ufoliosa_CP.ixx", "locationType": "UriLocation" },
+      "metaFilePath": { "uri": "trix/Ufoliosa_CP_meta.json", "locationType": "UriLocation" },
+      "assemblyNames": [ "Ufoliosa_CP" ]
     }
   ]
 }
