@@ -19,10 +19,28 @@
       }
     }
   ],
-  "configuration": {},
+  "configuration": {
+    "theme": {
+      "palette": {
+        "primary": {
+          "main": "#FF6600"
+        },
+        "secondary": {
+          "main": "#333333"
+        },
+        "tertiary": {
+          "main": "#005931"
+        }
+      }
+    },
+    "logoPath": {
+      "uri": "https://static.wixstatic.com/media/59411b_346294c28d494203a1ca5a9cbf988338~mv2.png/v1/fill/w_301,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Marca-Cbio-principal-laranja-sem-fundo-com-legenda-pt.png",
+      "locationType": "UriLocation"
+    }
+  },
   "connections": [],
   "defaultSession": {
-    "name": "New Session"
+    "name": "Nova Sessão CBioClima"
   },
   "tracks": [
     {
@@ -45,6 +63,16 @@
       },
       "assemblyNames": [
         "Ufoliosa_CP"
+      ],
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "Ufoliosa_CP.sorted.gff3-LinearBasicDisplay",
+          "renderer": {
+            "type": "SvgFeatureRenderer",
+            "color1": "#FF6600"
+          }
+        }
       ]
     }
   ],
