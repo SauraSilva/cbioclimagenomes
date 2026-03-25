@@ -30,6 +30,25 @@
         },
         "tertiary": {
           "main": "#005931"
+        },
+        "background": {
+          "default": "#ffffff"
+        }
+      },
+      "overrides": {
+        "JBrowseAppBar": {
+          "mainBar": {
+            "background": "#f8f9fa",
+            "color": "#333333"
+          },
+          "logo": {
+            "height": "45px",
+            "width": "auto",
+            "maxWidth": "180px",
+            "objectFit": "contain",
+            "padding": "5px",
+            "filter": "contrast(1.2) brightness(0.9)" 
+          }
         }
       }
     },
@@ -62,7 +81,7 @@
     {
       "type": "FeatureTrack",
       "trackId": "Ufoliosa_CP.sorted.gff3",
-      "name": "Ufoliosa_CP.sorted.gff3",
+      "name": "Anotação Ufoliosa_CP",
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
