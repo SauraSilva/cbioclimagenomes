@@ -1,0 +1,72 @@
+{
+  "assemblies": [
+    {
+      "name": "Ufoliosa_CP",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Ufoliosa_CP-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "Ufoliosa_CP.fasta",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "Ufoliosa_CP.fasta.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "Ufoliosa_CP.sorted.gff3",
+      "name": "Ufoliosa_CP.sorted.gff3",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Ufoliosa_CP.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "Ufoliosa_CP.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "Ufoliosa_CP"
+      ]
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Ufoliosa_CP-index",
+      "ixFilePath": {
+        "uri": "trix/Ufoliosa_CP.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Ufoliosa_CP.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Ufoliosa_CP_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Ufoliosa_CP"
+      ]
+    }
+  ]
+}
